@@ -1,0 +1,4 @@
+Chrome geliştirici hesabım olmadığı için maalesef ekleyemedim, bu sebepten ötürü paketlenmiş eklenti çalışmayacaktır.
+Eklentiler kısmından geliştirici modunu açın, ardından paketlenmemiş öğe yükleyin'e tıklayın.
+src klasörünü seçin. Eklenti aktifleşecektir.
+Geliştirici hesabı olan kişilere pem dosyasını paylaşacağım, emiruq1337@proton.me
