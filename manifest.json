@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "R10.net Link Düzenleyici",
+  "description": "R10.net sitesindeki yönlendirme linklerini düzenler.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.r10.net/*" 
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
