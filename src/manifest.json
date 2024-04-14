@@ -1,24 +1,21 @@
 {
   "manifest_version": 3,
   "name": "R10.net Link Düzenleyici",
+  "version": "1.1",
   "description": "R10.net sitesindeki yönlendirme linklerini düzenler.",
-  "version": "1.0",
-  "permissions": [
-    "activeTab",
-    "webNavigation",
-    "scripting",
-    "storage"
+  "host_permissions": [
+    "https://www.r10.net/*"
   ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png"
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
   },
   "content_scripts": [
     {
       "matches": [
-        "https://www.r10.net/*" 
+        "https://www.r10.net/*"
       ],
-      "js": ["content.js"]
+      "js": ["work.js"]
     }
   ]
 }

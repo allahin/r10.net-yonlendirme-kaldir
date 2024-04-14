@@ -1,6 +1,6 @@
 function extractActualUrl(href) {
-  const startIndex = href.indexOf("adres=") + 6; // 6 karakter uzunluğundaki adres= kelimesinin sonundan başla
-  const endIndex = href.indexOf("&token="); // &token= kelimesinin başına kadar al
+  const startIndex = href.indexOf("adres=") + 6; // 6 karakter uzunluğundaki adres= kelimesinin sonundan başla.
+  const endIndex = href.indexOf("&token="); // &token= kelimesinin başına kadar al.
   if (startIndex >= 6 && endIndex >= 0) {
     return decodeURIComponent(href.slice(startIndex, endIndex));
   }
@@ -13,10 +13,10 @@ function modifyLinks() {
     const href = link.getAttribute("href");
 
     if (href && href.includes("r10.net")) {
-      // target="_blank" silme
+      // target="_blank" silme.
       link.removeAttribute("target");
 
-      // hedef urlyi düzenleme
+      // Hedef URL'yi düzenleme.
       if (href.includes("https://www.r10.net/yonlendir/?adres=")) {
         const actualUrl = extractActualUrl(href);
         if (actualUrl) {
@@ -27,5 +27,5 @@ function modifyLinks() {
   });
 }
 
-// sayfa yüklendikten sonra linkleri düzenle
+// Sayfa yüklendikten sonra linkleri düzenle.
 window.addEventListener("load", modifyLinks);
